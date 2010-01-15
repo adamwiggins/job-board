@@ -25,10 +25,10 @@ module Bundler
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/mongo_ext-0.18.2/ext")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/sinatra-mongoid-0.0.1/bin")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/sinatra-mongoid-0.0.1/lib")
-  $LOAD_PATH.unshift File.expand_path("#{dir}/gems/leshill-will_paginate-2.3.11/bin")
-  $LOAD_PATH.unshift File.expand_path("#{dir}/gems/leshill-will_paginate-2.3.11/lib")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/mongo-0.18.2/bin")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/mongo-0.18.2/lib")
+  $LOAD_PATH.unshift File.expand_path("#{dir}/gems/leshill-will_paginate-2.3.11/bin")
+  $LOAD_PATH.unshift File.expand_path("#{dir}/gems/leshill-will_paginate-2.3.11/lib")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/mongoid-1.0.6/bin")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/mongoid-1.0.6/lib")
 
@@ -55,10 +55,10 @@ module Bundler
   @bundled_specs["mongo_ext"].loaded_from = "#{dir}/specifications/mongo_ext-0.18.2.gemspec"
   @bundled_specs["sinatra-mongoid"] = eval(File.read("#{dir}/specifications/sinatra-mongoid-0.0.1.gemspec"))
   @bundled_specs["sinatra-mongoid"].loaded_from = "#{dir}/specifications/sinatra-mongoid-0.0.1.gemspec"
-  @bundled_specs["leshill-will_paginate"] = eval(File.read("#{dir}/specifications/leshill-will_paginate-2.3.11.gemspec"))
-  @bundled_specs["leshill-will_paginate"].loaded_from = "#{dir}/specifications/leshill-will_paginate-2.3.11.gemspec"
   @bundled_specs["mongo"] = eval(File.read("#{dir}/specifications/mongo-0.18.2.gemspec"))
   @bundled_specs["mongo"].loaded_from = "#{dir}/specifications/mongo-0.18.2.gemspec"
+  @bundled_specs["leshill-will_paginate"] = eval(File.read("#{dir}/specifications/leshill-will_paginate-2.3.11.gemspec"))
+  @bundled_specs["leshill-will_paginate"].loaded_from = "#{dir}/specifications/leshill-will_paginate-2.3.11.gemspec"
   @bundled_specs["mongoid"] = eval(File.read("#{dir}/specifications/mongoid-1.0.6.gemspec"))
   @bundled_specs["mongoid"].loaded_from = "#{dir}/specifications/mongoid-1.0.6.gemspec"
 
